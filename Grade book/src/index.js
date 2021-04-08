@@ -12,5 +12,22 @@
 // Write the function to find the getGrade obtained.
 function getGrade (s1, s2, s3) {
    //your code here
+   var m = Math.floor((s1+s2+s3) / 3);
+   console.log(m)
+     if(m<100 && m>90){
+       return 'A'
+     }
+     else if(m<90 && m>=80){
+       return 'B'
+     }
+     else if(m<80 && m>=70){
+       return 'C'
+     }
+     else if(m<70 && m>=60){
+       return 'D'
+     }
+     else if(m<60 && m>0){
+       return 'F'
+     }
   }
 //Use SpecRunner to check the Test Cases.

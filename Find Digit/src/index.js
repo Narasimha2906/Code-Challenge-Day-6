@@ -9,6 +9,22 @@
 // Write the function to find the findDigit obtained.
 var findDigit = function(num, nth){
      //your code here
+     if(num == 0){
+       return 0
+     }
+     else if(num < 0 && nth>0){
+       num = -1 * num;
+       var num1 = num.toString();
+       return Number(num1.slice(-nth,(1-nth))) 
+
+     }
+     else if(num>0 && nth>0){
+      var num1 = num.toString();
+      return Number(num1.slice(-nth,(1-nth)))
+     }
+     else if(nth<0){
+       return -1
+     }
   }
 
 //Use SpecRunner to check the Test Cases.
